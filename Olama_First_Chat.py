@@ -17,7 +17,7 @@ custom_css = '''
 slt.title("Jarvis - Chat Bot")
 input_txt = slt.text_area("Please ask your questions to me", key="user_input", height=40)
 prompt = ChatPromptTemplate.from_messages(
-    [("system", "You're an AI assistant. Your name is Jarvis. You need to guide the user on his needs"),
+    [("system", "You're an AI assistant. Your name is Jarvis. You need to guide the user on his needs."),
      ("user", "user questions:{questions}")
      ])
 llm = Ollama(model="llama3.2:latest")
